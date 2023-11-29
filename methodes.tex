@@ -50,6 +50,7 @@ Les methodes bases sur les gradients consiste a utiliser le gradient pour se dir
 Soit $x \in \mathbb{R}^d $ telle que $\nabla F(x) \neq 0$. $h \in \mathbb{R}^d$ est une direction de descente si et seulement si $\langle \nabla F(x), h \rangle < 0$. En particulier, $h_{\nabla} : = -\frac{\nabla F(x)}{\lVert \nabla F(x) \rVert}$ est la meilleure direction de descente.
 \end{lemma}
 
+TODO expriquer qqpart la fonction que on choisit peut etre numeroter en $f_1$ et $f_2$ ou $f$ et $g$ 
 
 \subsection{Optimisation sans contrainte}
 
@@ -85,13 +86,13 @@ La methode du gradient a pas constant coniste a prendre un point et se deplacer 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.8\textwidth]{example-image}
+    \includegraphics[width = 0.8\textwidth]{TpOpti/grad_pas_cte1.pdf}
     \caption{Figure des iterations avec grad simple en 2D et 3D}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.8\textwidth]{example-image}
+    \includegraphics[width = 0.8\textwidth]{TpOpti/discretisation.pdf}
     \caption{Figure du pas optimale droite avec une discretisation elevee gauche discretisation basse}
     \label{fig_optimal_pas_graphe_discretisations}
 \end{figure}
@@ -105,8 +106,29 @@ La methode du gradient a pas constant coniste a prendre un point et se deplacer 
 \subsection{Methode du gradient a pas quasi-optimale}
 Dans ces methodes on trouve des pas quasi optimales pour aprocher au minimum avec moins de iterations.
 \subsubsection{Regle d'Armijo}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.45\textwidth]{TpOpti/Armijo1_0_2.pdf}
+    \includegraphics[width = 0.465\textwidth]{TpOpti/Armijo1_100.pdf}
+    \caption{TODO add nombre diterations fait}
+\end{figure}
+
 \subsubsection{Regle de Wolfe}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{TpOpti/Wolfe1.pdf}
+    \caption{TODO add nombre diterations fait}
+\end{figure}
 
 \subsection{Methode du gradient a pas optimale}
-Cette methode essaye de trouver la direction en prennant a la direction orthogonale de la direction precedente
+Cette methode essaye de trouver la direction en prennant a la direction orthogonale de la direction precedente. En faisant TODO mettre les formules etc 
+
+On peux voir cette orthogonalite sur la figure TODO cite 3D grad opti
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.45\textwidth]{TpOpti/grad_opti1.pdf}
+    \includegraphics[width = 0.45\textwidth]{TpOpti/grad_opti1_3D.pdf}  
+    \caption{TODO add nombre diterations fait}
+\end{figure}
 \subsection{Adjoint}
