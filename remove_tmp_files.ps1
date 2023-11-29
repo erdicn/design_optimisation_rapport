@@ -1,0 +1,1 @@
+Remove-Item -Path "*.*"  -Exclude *.tex, *.bib, *.eps, *.ps1, *.png, *.jpg, *.jpeg, *.pdf, *.tikz
