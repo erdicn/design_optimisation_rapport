@@ -33,3 +33,27 @@ TODO je suis pas sur si cet defini seulement si x et y sont de mem dimension ou 
 \begin{definition}[Espace d'Hilbert]
 
 \end{definition}
+
+\begin{definition}[dérivée de Gâteaux ou dérivée directionnelle]
+\end{definition}
+    
+\begin{definition}[Dérivée au sens de Fréchet]
+    TODO Soit $E$ un espace de Hilbert. On dit que f est Fréchet différentiable en x
+    s'il existe $p \in E$ tel que:
+    \begin{equation}
+        f(x+h) = f(x)+ \langle p, h \rangle +O(h^2) 
+    \end{equation}
+    On dit que p est la derivee (ou la differentielle ou le gradient) de $f$ en $x$ si ca existe peux etre note comme ci dessous. (Tout les ecriture ci dessous sont equivaslentes) % TODO metre dans la biblio livre de Philippe G. Ciarlet 
+    Donc la formule de Taylor-Young pour les fonctions $f: \mathbb{R}^n\rightarrow\mathbb{R}$ de classe $\mathcal{C} ^2$ est: 
+    \begin{equation}
+        f(x+h) = f(x)+ f'(x) h  + \frac{1}{2} f''(x)\langle h, h \rangle +O(||h||^3_2)
+    \end{equation}
+    \begin{equation}
+        f(x+h) = f(x)+ \langle \nabla f(x), h \rangle + \frac{1}{2} \langle \nabla^2 f(x)\cdot h, h \rangle +O(\langle h, \langle h, h\rangle \rangle)
+    \end{equation}
+    \begin{equation}
+        f(x+h) = f(x)+ (\nabla f(x))^T h \rangle + \frac{1}{2} h^T \nabla^2 f(x) h +O(h^T h h)
+    \end{equation}
+    % TODO est que les restes sont bon? Non mais siont les quelles les bons ???
+
+\end{definition}
