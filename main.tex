@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper]{book}%,twocolumn %pour deux colonnes mais il faut changer dautre choses aussipour que ca rend bien et avec deux colonnes on reduit notre rappport de 33 pages a 20 pages 
+\documentclass[12pt, a4paper, oneside]{book}%,twocolumn %pour deux colonnes mais il faut changer dautre choses aussipour que ca rend bien et avec deux colonnes on reduit notre rappport de 33 pages a 20 pages 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
@@ -210,6 +210,7 @@ sorting=none,
 % \end{itemize}
 % \newpage
 
+
 \vspace{250pt}
 \title{
     \normalsize\bfseries{\HeaderDeReapport}\\
@@ -219,10 +220,11 @@ sorting=none,
     %\textit{Intermediate Report}}
 }
 
-\author{Erdi ÇAN\\Encadré par \AncaBELME} %\\ Enseignant référent : \JeanCamilleCHASSAING}
+\author{Erdi ÇAN\\Samy DUMONT\\Encadré par \AncaBELME} %\\ Enseignant référent : \JeanCamilleCHASSAING}
 \date{10 septembre 2023}
 
 \maketitle
+
 % TODO put figures on the title page 
 \tikz[remember picture, overlay] 
 \node[shift={(1cm,-1cm)}] at (current page.north west) %
@@ -255,6 +257,7 @@ sorting=none,
 %                    \end{tabular}%
 % }
 %\afterpage{\blankpage}
+
 \newpage
 \setcounter{page}{1}
 \pagestyle{fancy}
@@ -277,13 +280,13 @@ sorting=none,
 % \newpage
 \section*{Remerciements}{
 }
-\newpage
+%\newpage
 
 \tableofcontents
 % \newpage
 \listoffigures
 \listoftables
-\newpage
+%\newpage
 
 \section*{Nomenclature}{
 \begin{table}[H]
